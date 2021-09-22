@@ -1,4 +1,4 @@
 ---
 spring:
   profiles:
-    include: eureka,security
+    include: eureka,security,configserver
