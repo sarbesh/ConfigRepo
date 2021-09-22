@@ -2,3 +2,18 @@
 spring:
   profiles:
     include: eureka,security,configserver
+
+logging:
+  level:
+    ROOT: INFO
+    com.sarbesh.configserver: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#Server port
+server:
+  port: ${PORT:8888}
