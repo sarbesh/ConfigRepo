@@ -9,6 +9,6 @@ management:
     web:
       exposure:
         include: "*"
-#
-#server:
-#  port: ${PORT:5000}
+
+server:
+  port: ${PORT:5000}
