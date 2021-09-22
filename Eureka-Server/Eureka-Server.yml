@@ -1,4 +1,8 @@
 ---
+spring:
+  profiles:
+    include: eureka,security
+
 logging:
   level:
     ROOT: INFO
