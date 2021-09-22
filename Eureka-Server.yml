@@ -15,4 +15,4 @@ management:
         include: "*"
 
 server:
-  port: ${PORT:5000}
+  port: ${PORT:8761}

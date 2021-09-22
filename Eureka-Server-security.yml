@@ -1,7 +1,8 @@
 ---
-security:
-  user:
-    password: ${eureka.password}
+spring:
+  security:
+    user:
+      password: ${eureka.password}
 
 management:
   security:
