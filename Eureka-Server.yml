@@ -1,0 +1,14 @@
+---
+logging:
+  level:
+    ROOT: INFO
+    com.sarbesh.eurekaserver: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#
+#server:
+#  port: ${PORT:5000}

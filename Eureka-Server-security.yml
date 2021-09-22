@@ -1,0 +1,8 @@
+---
+security:
+  user:
+    password: ${eureka.password}
+
+management:
+  security:
+    enabled: false
