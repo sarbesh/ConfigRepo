@@ -4,12 +4,13 @@ eureka:
     region: default
     registryFetchIntervalSeconds: 120
     serviceUrl:
-      defaultZone: ${vcap.services.pwa-eureka-service.credentials.uri:http://user:password@localhost:8761}/eureka/
+      defaultZone: ${EUREKA_URL:http://user:password@localhost:8761}/eureka
   instance:
-    hostname: ${vcap.application.uris[0]:localhost}
-    leaseRenewalIntervalInSeconds: 120
+#    hostname: ${vcap.application.uris[0]:Config-Server}
+    nonSecurePort: 80
+    leaseRenewalIntervalInSeconds: 180
     metadataMap:
       user: user
       password: ${spring.cloud.config.server.git.password}
       configPath: /config
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}:${random.value}
+      instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
