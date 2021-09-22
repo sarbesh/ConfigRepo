@@ -4,6 +4,7 @@ spring:
     config:
       server:
         git:
+          password: ${CONFIG_SERVER_PASSWORD:password}
           cloneOnStart: true #Verify any repository issue in service startup
           force-pull: true  #force pull from the remote repository if the local copy is dirty
           #searchPaths:
