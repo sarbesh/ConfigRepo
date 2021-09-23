@@ -10,3 +10,7 @@ eureka:
     registryFetchIntervalSeconds: 300
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://user:password@localhost:8761}/eureka
+logging:
+  level:
+    ROOT: WARN
+    com.sarbesh: INFO
