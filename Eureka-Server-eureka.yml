@@ -2,6 +2,9 @@
 eureka:
   instance:
     hostname: ${HOST_NAME:localhost}
+    metadataMap:
+      user: user
+      password: ${eureka.password}
   client:
     registerWithEureka: true
     fetchRegistry: true
