@@ -9,9 +9,9 @@ eureka:
     hostname: ${HOST_NAME:localhost}
     nonSecurePort: 80
     leaseRenewalIntervalInSeconds: 180
-    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+#    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
     metadataMap:
       user: user
       password: ${spring.cloud.config.server.git.password}
       configPath: /config
-      instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+#      instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}

@@ -4,6 +4,9 @@ spring:
     config:
       uri: ${CONFIG_SERVER_URL:http://user:password@localhost:8888}
       enabled: true
+    discovery:
+      enabled: true
+      serviceId: Config-Server
 eureka:
   client:
     region: default

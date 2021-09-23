@@ -10,3 +10,4 @@ spring:
           #searchPaths:
       discovery:
         enabled: true
+        serviceId: Config-Server
