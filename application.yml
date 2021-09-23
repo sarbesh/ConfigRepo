@@ -1,0 +1,14 @@
+---
+spring:
+  profiles:
+    active: prod
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://user:password@localhost:8888}
+      enabled: true
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 300
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://user:password@localhost:8761}/eureka
