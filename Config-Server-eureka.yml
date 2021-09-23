@@ -3,13 +3,11 @@ eureka:
   client:
     region: default
     registryFetchIntervalSeconds: 120
+    fetch-registry: true
+    register-with-eureka: true
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://user:password@localhost:8761}/eureka
   instance:
-    hostname: ${HOST_NAME:localhost}
-    nonSecurePort: 80
-    leaseRenewalIntervalInSeconds: 180
-    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
     metadataMap:
       user: user
       password: ${spring.cloud.config.server.git.password}
