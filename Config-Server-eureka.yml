@@ -8,10 +8,6 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://user:password@localhost:8761}/eureka
   instance:
-    hostname: ${HOST_NAME:localhost}
-    statusPageUrl: https://${eureka.instance.hostname}/info
-    healthCheckUrl: https://${eureka.instance.hostname}/health
-    homePageUrl: https://${eureka.instance.hostname}/
     metadataMap:
       user: user
       password: ${spring.cloud.config.server.git.password}
