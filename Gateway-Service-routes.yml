@@ -1,0 +1,11 @@
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: service
+          uri: lb://service
+          predicates:
+            - Path=/service/**
+          filters:
+            - StripPrefix=1

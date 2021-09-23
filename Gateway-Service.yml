@@ -1,0 +1,10 @@
+---
+spring:
+  profiles:
+    include: routes
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
