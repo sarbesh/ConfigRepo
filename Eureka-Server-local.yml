@@ -3,3 +3,7 @@ logging:
   level:
     ROOT: DEBUG
     com.sarbesh.eurekaserver: DEBUG
+
+eureka:
+  instance:
+    preferIpAddress: true
