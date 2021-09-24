@@ -11,3 +11,7 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_PEER_URL}/eureka/
   password: ${EUREKA_USER_PASSWORD:password}
+  server:
+    expectedClientRenewalIntervalSeconds: 3600
+    easeExpirationDurationInSeconds: 86400
+    evictionIntervalTimerInMs: 43200

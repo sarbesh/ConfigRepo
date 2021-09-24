@@ -25,7 +25,7 @@ eureka:
     nonSecurePort: 80
     securePortEnabled: true
     securePort: 443
-    leaseRenewalIntervalInSeconds: 180
+    leaseRenewalIntervalInSeconds: 1800
     instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
 
 logging:
