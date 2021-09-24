@@ -1,11 +1,12 @@
 ---
 spring:
-#  profiles:
-#    active: local
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://user:password@localhost:8888}
       enabled: true
+  security:
+  	user:
+	  password: ${PASSWORD:password}
 eureka:
   client:
     region: default
