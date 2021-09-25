@@ -12,8 +12,8 @@ eureka:
   client:
     region: default
     registryFetchIntervalSeconds: 300
-    fetch-registry: true
-    register-with-eureka: true
+    fetchRegistry: true
+    registerWithEureka: true
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://user:password@localhost:8761}/eureka
   instance:
