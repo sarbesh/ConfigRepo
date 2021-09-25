@@ -1,9 +1,4 @@
 ---
-spring:
-  profiles:
-    group:
-      policyNonProd: policy-login,policy-registration
-
 #accessPolicies:
 #  - api:
 #      - url: "/url1"

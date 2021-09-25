@@ -1,7 +1,9 @@
 ---
 spring:
   profiles:
-    include: routes,policy
+    group:
+      local: routes,policy,policy-login,policy-registration
+      prod: routes,policy,policy-login,policy-registration
 
 management:
   endpoints:
