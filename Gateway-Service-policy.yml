@@ -16,4 +16,4 @@ accessPolicies:
           - "PUT"
     allowedRoles:
       - "USER"
-      - "VISITOR"
+      - "ADMIN"
