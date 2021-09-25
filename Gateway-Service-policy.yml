@@ -1,7 +1,7 @@
 ---
 spring:
   profiles:
-    include: policy-login,policy-registration
+    include: login,registration
 
 accessPolicies:
   - api:
