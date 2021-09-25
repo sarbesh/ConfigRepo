@@ -3,9 +3,15 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: service
-          uri: lb://service
+        - id: signOn
+          uri: lb://Login
           predicates:
-            - Path=/service/**
+            - Path=/prelogin/login/**
           filters:
-            - StripPrefix=1
+            - StripPrefix=2
+        - id: userRegistation
+          uri: lb://User-Registration
+          predicates:
+            - Path=/prelogin/register/user
+          filters:
+            - StripPrefix=2

@@ -1,0 +1,8 @@
+---
+accessPolicies:
+  - api:
+      - url: "/prelogin/register/user"
+        httpMethod:
+          - "POST"
+    allowedRoles:
+      - "VISITOR"

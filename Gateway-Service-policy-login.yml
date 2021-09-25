@@ -1,0 +1,8 @@
+---
+accessPolicies:
+  - api:
+      - url: "/prelogin/login/passwordLogin"
+        httpMethod:
+          - "POST"
+    allowedRoles:
+      - "VISITOR"
