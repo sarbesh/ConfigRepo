@@ -3,21 +3,21 @@ spring:
   profiles:
     include: policy-login,policy-registration
 
-#accessPolicies:
-#  - api:
-#      - url: "/url1"
-#        httpMethod:
-#          - "GET"
-#      - url: "/url2"
-#        httpMethod:
-#          - "GET"
-#    allowedRoles:
-#      - "VISITOR"
-#  - api:
-#      - url: "/url3"
-#        httpMethod:
-#          - "POST"
-#          - "PUT"
-#    allowedRoles:
-#      - "USER"
-#      - "ADMIN"
+accessPolicies:
+  - api:
+      - url: "/url1"
+        httpMethod:
+          - "GET"
+      - url: "/url2"
+        httpMethod:
+          - "GET"
+    allowedRoles:
+      - "VISITOR"
+  - api:
+      - url: "/url3"
+        httpMethod:
+          - "POST"
+          - "PUT"
+    allowedRoles:
+      - "USER"
+      - "ADMIN"
