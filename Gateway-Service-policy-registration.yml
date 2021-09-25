@@ -1,8 +1,9 @@
 ---
 accessPolicies:
-  - api:
-      - url: "/prelogin/register/user"
-        httpMethod:
-          - "POST"
-    allowedRoles:
-      - "VISITOR"
+  userRegistation:
+    - api:
+        - url: "/prelogin/register/user"
+          httpMethod:
+            - "POST"
+      allowedRoles:
+        - "VISITOR"
