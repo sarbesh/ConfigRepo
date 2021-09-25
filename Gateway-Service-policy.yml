@@ -1,7 +1,8 @@
 ---
 spring:
   profiles:
-    include: policy-login,policy-registration
+    group:
+      policyNonProd: policy-login,policy-registration
 
 #accessPolicies:
 #  - api:
