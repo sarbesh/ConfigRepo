@@ -21,3 +21,13 @@ logging:
   level:
     ROOT: INFO
     com.sarbesh: DEBUG
+
+jwt:
+  signingKey: "MyJWTSecretKEY"
+  header:
+    string: "Authorization"
+  token:
+    prefix: "Bearer "
+    validity: 18000
+  authorities:
+    key: "roles"
