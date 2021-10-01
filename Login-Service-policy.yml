@@ -7,3 +7,11 @@ accessPolicies:
             - "POST"
       allowedRoles:
         - "VISITOR"
+  actuator:
+    - api:
+        - url: "/actuator/**"
+          httpMethod:
+            - "POST"
+            - "GET"
+      allowedRoles:
+        - "VISITOR"
