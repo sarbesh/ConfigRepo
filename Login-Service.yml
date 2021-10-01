@@ -1,0 +1,10 @@
+---
+spring:
+  profiles:
+    include: policy,security
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

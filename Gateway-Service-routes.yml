@@ -4,11 +4,11 @@ spring:
     gateway:
       routes:
         - id: signOn
-          uri: lb://Login
+          uri: lb://Login-service
           predicates:
-            - Path=/prelogin/login/**
+            - Path=/prelogin/auth/passwordLogin
           filters:
-            - StripPrefix=2
+            - StripPrefix=0
         - id: userRegistation
           uri: lb://User-Registration
           predicates:
