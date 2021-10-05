@@ -19,4 +19,4 @@ spring:
 #    level: "%5p [${spring.zipkin.service.name:${spring.application.name:}},%X{traceId:-},%X{spanId:-}] [%X{ddd:-},%X{bp:-},%X{bpids:-}] [%X{op:-},%X{chunk:-},%X{i:-}]"
 logging:
   pattern:
-    level: "%5p [%X{App-Name:${spring.application.name}}|%X{spanId:-}|%X{traceId:-}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{UUID}] - %m%n"
+    console: "%5p [%X{App-Name:${spring.application.name}}|%X{spanId:-}|%X{traceId:-}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{UUID}] - %m%n"
