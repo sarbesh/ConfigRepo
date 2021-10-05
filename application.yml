@@ -6,4 +6,4 @@ spring:
 
 logging:
   pattern:
-    level: %5p|%X{Method}|%X{Path}|%X{Uri}|%X{User-Agent}|%X{Remote}|%X{App-Name}|%X{UUID}|%m%n
+    level: "%5p|%X{Method}|%X{Path}|%X{Uri}|%X{User-Agent}|%X{Remote}|%X{App-Name}|%X{UUID}|%m%n"
