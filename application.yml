@@ -3,17 +3,17 @@ spring:
   profiles:
     group:
       local: local-security
-  sleuth:
-    baggage:
-      correlation-fields:
-        - "Method"
-        - "Uri"
-        - "Query"
-        - "User-Agent"
-        - "Remote"
-        - "App-Name"
-        - "UUID"
+#  sleuth:
+#    baggage:
+#      correlation-fields:
+#        - "Method"
+#        - "Uri"
+#        - "Query"
+#        - "User-Agent"
+#        - "Remote"
+#        - "App-Name"
+#        - "UUID"
 
-#logging:
-#  pattern:
-#    console: "%5p [%X{X-B3-TraceId}|%X{X-B3-SpanId}|%X{X-Span-Export}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{App-Name}|%X{UUID}] - %m%n"
+logging:
+  pattern:
+    level: "%5p [%X{App-Name}|%X{spanId}|%X{traceId}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{UUID}] - %m%n"
