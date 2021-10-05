@@ -6,7 +6,7 @@ spring:
         - id: signOn
           uri: lb://Login-service
           predicates:
-            - Path=/prelogin/auth/passwordLogin
+            - Path=/api/prelogin/auth/passwordLogin
           filters:
             - StripPrefix=0
         - id: userRegistation

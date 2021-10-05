@@ -1,5 +1,7 @@
 ---
 spring:
+  profiles:
+    include: local-security
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://user:password@localhost:8888}
@@ -21,13 +23,3 @@ logging:
   level:
     ROOT: INFO
     com.sarbesh: DEBUG
-
-jwt:
-  signingKey: "MyJWTSecretKEY"
-  header:
-    string: "Authorization"
-  token:
-    prefix: "Bearer "
-    validity: 18000
-  authorities:
-    key: "roles"
