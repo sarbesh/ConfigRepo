@@ -16,4 +16,4 @@ spring:
 
 logging:
   pattern:
-    level: "%5p [%X{App-Name}|%X{spanId}|%X{traceId}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{UUID}] - %m%n"
+    console: "%5p [%X{App-Name:spring.application.name}|%X{spanId}|%X{traceId}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{UUID}] - %m%n"
