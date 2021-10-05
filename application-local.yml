@@ -1,7 +1,8 @@
 ---
 spring:
   profiles:
-    include: local-security
+    group:
+      local: local-security
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://user:password@localhost:8888}
