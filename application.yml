@@ -3,7 +3,12 @@ spring:
   profiles:
     group:
       local: local-security
+  sleuth:
+    baggage-keys: "Method","Uri","Query","User-Agent","Remote","App-Name","UUID"
+    log:
+      slf4j:
+        whitelisted-mdc-keys: "Method","Uri","Query","User-Agent","Remote","App-Name","UUID"
 
-logging:
-  pattern:
-    console: "%5p [%X{X-B3-TraceId}|%X{X-B3-SpanId}|%X{X-Span-Export}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{App-Name}|%X{UUID}] - %m%n"
+#logging:
+#  pattern:
+#    console: "%5p [%X{X-B3-TraceId}|%X{X-B3-SpanId}|%X{X-Span-Export}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{App-Name}|%X{UUID}] - %m%n"
