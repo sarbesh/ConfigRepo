@@ -4,10 +4,24 @@ spring:
     group:
       local: local-security
   sleuth:
-    baggage-keys: "Method","Uri","Query","User-Agent","Remote","App-Name","UUID"
+    baggage-keys:
+      - "Method"
+      - "Uri"
+      - "Query"
+      - "User-Agent"
+      - "Remote"
+      - "App-Name"
+      - "UUID"
     log:
       slf4j:
-        whitelisted-mdc-keys: "Method","Uri","Query","User-Agent","Remote","App-Name","UUID"
+        whitelisted-mdc-keys:
+          - "Method"
+          - "Uri"
+          - "Query"
+          - "User-Agent"
+          - "Remote"
+          - "App-Name"
+          - "UUID"
 
 #logging:
 #  pattern:
