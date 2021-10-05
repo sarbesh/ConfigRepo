@@ -2,7 +2,13 @@
 accessPolicies:
   passworLogin:
     - api:
-        - url: "/prelogin/login/passwordLogin"
+        - url: "/prelogin/auth/passwordLogin"
+          httpMethod:
+            - "POST"
+        - url: "/prelogin/auth/register"
+          httpMethod:
+            - "POST"
+        - url: "/login/userUpdate"
           httpMethod:
             - "POST"
       allowedRoles:

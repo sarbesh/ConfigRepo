@@ -14,9 +14,6 @@ spring:
 #        - "App-Name"
 #        - "UUID"
 
-#logging:
-#  pattern:
-#    level: "%5p [${spring.zipkin.service.name:${spring.application.name:}},%X{traceId:-},%X{spanId:-}] [%X{ddd:-},%X{bp:-},%X{bpids:-}] [%X{op:-},%X{chunk:-},%X{i:-}]"
 logging:
   pattern:
     level: "%5p %X{App-Name:${spring.application.name}}|%X{traceId:-}|%X{spanId:-}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{UUID}"
