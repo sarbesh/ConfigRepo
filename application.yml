@@ -6,4 +6,4 @@ spring:
 
 logging:
   pattern:
-    level: "%5p [%X{X-B3-TraceId}|%X{X-B3-SpanId}|%X{X-Span-Export}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{App-Name}|%X{UUID}] - %m%n"
+    console: "%5p [%X{X-B3-TraceId}|%X{X-B3-SpanId}|%X{X-Span-Export}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{App-Name}|%X{UUID}] - %m%n"
