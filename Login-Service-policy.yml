@@ -20,4 +20,4 @@ accessPolicies:
             - "POST"
             - "GET"
       allowedRoles:
-        - "VISITOR"
+        - "ADMIN"

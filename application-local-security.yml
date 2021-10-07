@@ -6,7 +6,6 @@ management:
 security:
   network:
     access-control:
-      enable: true
       secret: "my-Network-Secuiiryt-Access"
       header: "x-network-access"
       ignoreApi:
