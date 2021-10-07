@@ -8,3 +8,8 @@ spring:
 management:
   security:
     enabled: false
+
+security:
+  network:
+    access-control:
+      enable: false

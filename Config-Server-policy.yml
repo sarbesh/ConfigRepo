@@ -1,0 +1,24 @@
+---
+accessPolicies:
+  application-config:
+    - api:
+        - url: "/**"
+          httpMethod:
+            - "GET"
+      allowedRoles:
+        - "VISITOR"
+        - "USER"
+  admins:
+    - api:
+        - url: "/actuator/**"
+          httpMethod:
+            - "POST"
+            - "GET"
+        - url: "/encrypt"
+          httpMethod:
+            - "POST"
+        - url: "/decrypt"
+          httpMethod:
+            - "POST"
+      allowedRoles:
+        - "ADMIN"
