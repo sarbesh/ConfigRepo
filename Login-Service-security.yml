@@ -3,3 +3,12 @@
 management:
   security:
     enabled: false
+
+security:
+  network:
+    access-control:
+      enable: true
+  user-auth:
+    enable: true
+  service-auth:
+    enable: true

@@ -1,10 +1,5 @@
 ---
-spring:
-  security:
-    user:
-      password: ${spring.cloud.config.server.git.password}
 
-#Disable security of the Management endpoint
 management:
   security:
     enabled: false

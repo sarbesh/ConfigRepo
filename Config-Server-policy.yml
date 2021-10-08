@@ -1,13 +1,5 @@
 ---
 accessPolicies:
-  application-config:
-    - api:
-        - url: "/**"
-          httpMethod:
-            - "GET"
-      allowedRoles:
-        - "VISITOR"
-        - "USER"
   admins:
     - api:
         - url: "/actuator/**"
