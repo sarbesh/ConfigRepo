@@ -11,4 +11,4 @@ security:
   user-auth:
     enable: true
   service-auth:
-    enable: true
+    disable: false

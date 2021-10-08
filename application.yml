@@ -16,4 +16,4 @@ spring:
 
 logging:
   pattern:
-    level: "%5p %X{App-Name:${spring.application.name}}|%X{traceId:-}|%X{spanId:-}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{UUID}"
+    level: "%5p |%X{${spring.application.name}}|%X{traceId:-}|%X{spanId:-}|%X{Method}|%X{Uri}|%X{Query}|%X{User-Agent}|%X{Remote}|%X{UUID}|"
