@@ -17,9 +17,7 @@ accessPolicies:
           httpMethod:
             - "POST"
         - url:
-            - "/actuator/env"
-            - "/actuator/health"
-            - "/actuator/info"
+            - "/actuator/**"
           httpMethod:
             - "GET"
       allowedRoles:
