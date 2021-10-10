@@ -11,11 +11,13 @@ accessPolicies:
         - "VISITOR"
   actuator:
     - api:
-        - url: "/actuator/**"
+        - url:
+            - "/actuator/**"
           httpMethod:
             - "POST"
             - "GET"
-        - url: "/login/userUpdate"
+        - url:
+            -  "/login/userUpdate"
           httpMethod:
             - "POST"
       allowedRoles:
