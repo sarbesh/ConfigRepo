@@ -9,10 +9,10 @@ accessPolicies:
       allowedRoles: "VISITOR"
   actuator:
     - api:
+        - url: "/actuator/refresh"
+          httpMethod: "POST"
         - url: "/actuator/**"
           httpMethod: "GET"
-        - url: "/actuator/**"
-          httpMethod: "POST"
         - url: "/login/userUpdate"
           httpMethod: "POST"
       allowedRoles: "ADMIN"
