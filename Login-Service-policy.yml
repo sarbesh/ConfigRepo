@@ -13,15 +13,14 @@ accessPolicies:
     - api:
         - url:
             - "/actuator/refresh"
-          httpMethod:
-            - "POST"
-        - url:
-            - "/actuator/**"
-          httpMethod:
-            - "GET"
-        - url:
             - "/login/userUpdate"
           httpMethod:
             - "POST"
+        - url:
+            - "/actuator/env"
+            - "/actuator/health"
+            - "/actuator/info"
+          httpMethod:
+            - "GET"
       allowedRoles:
         - "ADMIN"
