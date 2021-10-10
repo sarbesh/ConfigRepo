@@ -4,7 +4,7 @@ accessPolicies:
     - api:
         - url:
             - "/prelogin/auth/passwordLogin"
-            -  "/prelogin/auth/register"
+            - "/prelogin/auth/register"
           httpMethod:
             - "POST"
       allowedRoles:
