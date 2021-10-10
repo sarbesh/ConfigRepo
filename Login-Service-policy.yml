@@ -5,20 +5,14 @@ accessPolicies:
         - url:
             - "/prelogin/auth/passwordLogin"
             - "/prelogin/auth/register"
-          httpMethod:
-            - "POST"
-      allowedRoles:
-        - "VISITOR"
+          httpMethod: "POST"
+      allowedRoles: "VISITOR"
   actuator:
     - api:
-        - url:
-            - "/actuator/**"
-          httpMethod:
-            - "POST"
-            - "GET"
-        - url:
-            -  "/login/userUpdate"
-          httpMethod:
-            - "POST"
-      allowedRoles:
-        - "ADMIN"
+        - url: "/actuator/**"
+          httpMethod: "GET"
+        - url: "/actuator/**"
+          httpMethod: "POST"
+        - url: "/login/userUpdate"
+          httpMethod: "POST"
+      allowedRoles: "ADMIN"
