@@ -1,0 +1,5 @@
+---
+logging:
+  level:
+    ROOT: WARN
+    com.sarbesh.loginservice: INFO
