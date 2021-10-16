@@ -6,13 +6,13 @@ management:
 security:
   network:
     access-control:
-      secret: ""
+      secret: '{cipher}58f9a22b874b9c9984cc5971d81b7a627fbeaf093883828da1e44e1a1b93514fb4e612becb2453252c9ce7d5ab041993fcae1c7ed923eaad92e9e6e52de37e2c'
       header: "X-Network-Control"
       ignoreApi:
         - "/actuator/**"
 
 jwt:
-  signingKey: ""
+  signingKey: '{cipher}9e7cf4c43244d0d6e1bcfcf725dcefa8d3cd5502b9e37e4e35f71ca37be16e2bafbffd24dbbd9a9f713362dc7b85964fac90dcc34c776d05bb70e472f04ce397'
   token:
     validity: 18000
     prefix: "Bearer "
