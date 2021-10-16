@@ -1,0 +1,22 @@
+#Disable security of the Management endpoint
+management:
+  security:
+    enabled: false
+
+security:
+  network:
+    access-control:
+      secret: ""
+      header: "X-Network-Control"
+      ignoreApi:
+        - "/actuator/**"
+
+jwt:
+  signingKey: ""
+  token:
+    validity: 18000
+    prefix: "Bearer "
+  authorities:
+    key: "roles"
+  header:
+    string: "Authorization"
