@@ -37,3 +37,6 @@ logging:
 management:
   security:
     enabled: false
+  endpoint:
+    health:
+      showDetails: always
