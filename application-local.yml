@@ -10,8 +10,8 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: ${EUREKA_REGISTER:false}
-    fetchRegistry: ${EUREKA_FETCH:false}
+    registerWithEureka: false
+    fetchRegistry: false
 #    region: default
 #    registryFetchIntervalSeconds: 30
 #    serviceUrl:
