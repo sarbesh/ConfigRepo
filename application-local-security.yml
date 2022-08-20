@@ -1,7 +1,11 @@
+---
 #Disable security of the Management endpoint
 management:
   security:
     enabled: false
+  endpoint:
+    health:
+      showDetails: always
 
 security:
   network:
