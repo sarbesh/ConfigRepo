@@ -10,6 +10,11 @@ spring:
   security:
     user:
       password: ${PASSWORD:password}
+  # Redis Properties
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+#    clientType: lettuce
 
 eureka:
   client:
