@@ -1,0 +1,14 @@
+---
+logging:
+  level:
+    ROOT: DEBUG
+    com.sarbesh.eurekaserver: DEBUG
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: ${EUREKA_REGISTER:false}
+    fetchRegistry: ${EUREKA_FETCH:false}
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
