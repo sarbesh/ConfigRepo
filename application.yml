@@ -4,7 +4,6 @@ spring:
     group:
       local: local-security
       prod: prod-security
-      docker: docker-security
 
 logging:
   pattern:
